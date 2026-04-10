@@ -1,0 +1,14 @@
+.venv/
+.idea/
+__pycache__/
+*.pyc
+.env
+data/app.db
+data/faiss_index/
+data/processed/
+*.egg-info/
+.mypy_cache/
+.claude/
+alembic/versions/
+*.docx
+ans.md
