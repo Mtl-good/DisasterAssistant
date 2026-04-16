@@ -1,0 +1,104 @@
+{
+  "type": "combined_g_compare_summary",
+  "dataset": "single_turn",
+  "variants": [
+    "G1",
+    "G2",
+    "G3"
+  ],
+  "generated_at": "2026-04-15T21:44:54.642048",
+  "no_judge": {
+    "timestamp": "2026-04-15T19:32:30.586682",
+    "has_judge": false,
+    "summaries": {
+      "G1": {
+        "hit_at_k": 0.32,
+        "recall": 0.32,
+        "mrr": 0.1195,
+        "ndcg": 0.16697633804695539,
+        "avg_latency_ms": 19339.185104370117,
+        "p95_latency_ms": 33466.20559692383
+      },
+      "G2": {
+        "hit_at_k": 0.31,
+        "recall": 0.31,
+        "mrr": 0.31,
+        "ndcg": 0.31,
+        "avg_latency_ms": 18638.821914196014,
+        "p95_latency_ms": 30545.753955841064
+      },
+      "G3": {
+        "hit_at_k": 0.46,
+        "recall": 0.46,
+        "mrr": 0.455,
+        "ndcg": 0.45481274659106213,
+        "avg_latency_ms": 15335.39085149765,
+        "p95_latency_ms": 21797.178983688354
+      }
+    },
+    "source_report": "g_compare_single_turn_no_judge.md",
+    "source_raw": "g_compare_single_turn_no_judge_raw.json"
+  },
+  "judge": {
+    "timestamp": "2026-04-15T21:37:26.658067",
+    "has_judge": true,
+    "summaries": {
+      "G1": {
+        "hit_at_k": 0.12,
+        "recall": 0.12,
+        "mrr": 0.04033333333333333,
+        "ndcg": 0.059709121556749,
+        "avg_latency_ms": 6313.5592341423035,
+        "p95_latency_ms": 24008.431673049927,
+        "completeness": 4.117647058823529,
+        "accuracy": 4.470588235294118,
+        "actionability": 4.911764705882353,
+        "hallucination_rate": 0.03473491773308958,
+        "citation_precision": 0.3,
+        "retrieval_score": 8.404182431134979,
+        "generation_score": 89.58823529411764,
+        "evidence_score": 56.61060329067642,
+        "latency_score": 0.0,
+        "robustness_score": 36.24043421100519
+      },
+      "G2": {
+        "hit_at_k": 0.0,
+        "recall": 0.0,
+        "mrr": 0.0,
+        "ndcg": 0.0,
+        "avg_latency_ms": 2396.825671195984,
+        "p95_latency_ms": 2643.937826156616,
+        "retrieval_score": 0.0,
+        "generation_score": 0.0,
+        "evidence_score": 0.0,
+        "latency_score": 100.0,
+        "robustness_score": 25.0
+      },
+      "G3": {
+        "hit_at_k": 0.0,
+        "recall": 0.0,
+        "mrr": 0.0,
+        "ndcg": 0.0,
+        "avg_latency_ms": 2418.888578414917,
+        "p95_latency_ms": 2662.1034145355225,
+        "retrieval_score": 0.0,
+        "generation_score": 0.0,
+        "evidence_score": 0.0,
+        "latency_score": 99.43670135166568,
+        "robustness_score": 24.85917533791642
+      }
+    },
+    "source_report": "g_compare_single_turn_judge.md",
+    "source_raw": "g_compare_single_turn_judge_raw.json",
+    "valid_judge_case_counts": {
+      "G1": 34,
+      "G2": 0,
+      "G3": 0
+    },
+    "insufficient_balance_error_count": 266
+  },
+  "judge_status": {
+    "status": "partial_failure",
+    "reason": "Judge run hit 402 Insufficient Balance; metrics after that point are not a full valid all-case comparison."
+  }
+}
